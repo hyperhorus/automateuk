@@ -14,11 +14,12 @@ public class AutomateLandingPage {
 	By actionOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'actions.html')]");
 	
 	public void accordionClick() {
-		driver.findElement(accordionOpt).click();;
+		driver.manage().window().maximize();
+		driver.findElement(accordionOpt).click();
 	}
 	
 	public void acctionClick() {
-		driver.findElement(actionOpt).click();;
+		driver.findElement(actionOpt).click();
 	}
 	
 	
