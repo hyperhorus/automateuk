@@ -28,11 +28,23 @@ public class AutomateLandingPage_Definition {
 		automateLandingPage.accordionClick();
 		automateLandingPage.acctionClick();
 		automateLandingPage.browserTabClick();
+	
 	}
 	@Then("Las paginas de cada una de las opciones se despliegan")
 	public void las_paginas_de_cada_una_de_las_opciones_se_despliegan() {
 		System.out.println("El then");
 	}
+	
+	@When("Usuario navega a la seccion Accordion")
+	public void usuario_navega_a_la_seccion_accordion() {
+		automateLandingPage.accordionClick();
+	}
+	@Then("Usuario verifica que se desplego la pagina de Accordion")
+	public void usuario_verifica_que_se_desplego_la_pagina_de_accordion() {
+		automateLandingPage.platPortasection();
+		automateLandingPage.languageSupport();
+	}
+
 
 
 

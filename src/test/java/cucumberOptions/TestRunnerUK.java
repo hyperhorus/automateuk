@@ -11,8 +11,8 @@ features={"C:\\Users\\hyper\\eclipse-workspace\\automateuk\\src\\test\\java\\fea
 glue = {"stepDefinitions"},
 monochrome = true,
 plugin = {"pretty", "html:target/cucumber.html", "rerun:target/failed_scenarios.txt"},
-dryRun = false
-//tags = "@A2" 
+dryRun = false,
+tags = "@A2" 
 )
 public class TestRunnerUK {
 

@@ -13,6 +13,9 @@ public class AutomateLandingPage {
 	By accordionOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'accordion.html')]");
 	By actionOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'actions.html')]");
 	By browserTabsOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'browserTabs.html')]");
+	By accorPlatPortability = By.xpath("//div[@class='accordion']/div[1]");
+	By languageSupport = By.xpath("//div[@class='accordion']/div[3]");
+	
 	
 	public void accordionClick() {
 		driver.manage().window().maximize();
@@ -27,6 +30,14 @@ public class AutomateLandingPage {
 		driver.findElement(browserTabsOpt).click();
 	}
 	
+	//Para la seccion de accordion
+	public void platPortasection() {
+		driver.findElement(accordionOpt).click();
+		driver.findElement(accorPlatPortability).click();
+	}
 	
+	public void languageSupport() {
+		driver.findElement(languageSupport).click();
+	}
 	
 }
