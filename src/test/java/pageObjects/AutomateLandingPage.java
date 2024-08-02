@@ -12,6 +12,7 @@ public class AutomateLandingPage {
 	
 	By accordionOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'accordion.html')]");
 	By actionOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'actions.html')]");
+	By browserTabsOpt = By.xpath("//div[@id='sidebar']//a[contains(@href,'browserTabs.html')]");
 	
 	public void accordionClick() {
 		driver.manage().window().maximize();
@@ -20,6 +21,10 @@ public class AutomateLandingPage {
 	
 	public void acctionClick() {
 		driver.findElement(actionOpt).click();
+	}
+	
+	public void browserTabClick() {
+		driver.findElement(browserTabsOpt).click();
 	}
 	
 	

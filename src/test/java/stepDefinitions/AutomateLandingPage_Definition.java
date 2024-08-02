@@ -26,6 +26,8 @@ public class AutomateLandingPage_Definition {
 	@When("El usuario navega a  las tres primeras opciones del menu")
 	public void el_usuario_navega_a_las_tres_primeras_opciones_del_menu() {
 		automateLandingPage.accordionClick();
+		automateLandingPage.acctionClick();
+		automateLandingPage.browserTabClick();
 	}
 	@Then("Las paginas de cada una de las opciones se despliegan")
 	public void las_paginas_de_cada_una_de_las_opciones_se_despliegan() {
